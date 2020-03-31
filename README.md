@@ -1,1 +1,0 @@
-# P3_C2_Interface_statique_adaptable
