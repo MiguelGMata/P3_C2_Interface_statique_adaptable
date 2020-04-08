@@ -5,352 +5,331 @@
     list-style: none;
     line-height: 1.8;
 }
-html,
+
 body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    background-color: white;
 }
 
-/****************************** PARTIE MOBILE****************************************/
-@media (max-width: 480px) {
-     /* PARTIE HEADER*/
-    .header {
-        width: 100vw;
-        height: 100vh;
-    }
-    #container1{
-        position: relative;
-        display: inline-block;   
-    }
-    #mastehead {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-    }
-    #logo {
-        position: absolute;
-        top: 4%;
-        left: 5%;
-        width: 5%;
-    }
-    #dessus {
-        position: absolute;
-        padding: 10%;
-        color: white;
-        top: -3%;
-        font-size: 18px;
+h2{
+    font-size: 2.5em;
+    font-family: "ARIAL", serif;
+}
+
+h3 {
+    font-size: 2em;
+    font-family: "ARIAL", serif;
+    
+}
+
+h4 {
+    font-size: 1.5em;
+    font-family: "ARIAL", serif;
+}
+h5{
+    font-family: "ARIAL", serif;
+    padding: 5% 0%;
+}
+
+p{
+    font-family: "ARIAL", serif;
+    font-size: 12px;
+}
+
+/*****************************HEADER*************************************************/
+.header{
+    height: 100vh;
+    padding: 70% 35% 50% 10%;
+    color: white;
+    background-image: url("./img/mastehead.jpg");
+    background-size: cover;   /***permite de cubrir toda la zona***/
+    background-position: center; /*** para centrar en el div***/
+    background-repeat: no-repeat; /* para que no se repita**/
+}
+
+#container1{
+    background-image: url("./img/logo.png");
+    background-size: 10%;
+    background-repeat: no-repeat;    
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<pPORTABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+ 
+/*****************************SECTION 1*************************************************/
+.section_1{
+    padding: 20% 10%;
+}
+.section_1_text{
+    color: grey;
+}
+
+/*****************************SECTION 2*************************************************/
+.section_2{
+    padding: 10%;
+    color: white;
+}
+
+#boite-1{
+    padding: 10%;
+    background-color: rgba(250, 37, 250, 0.993);
+}
+
+#boite-2{
+    padding: 10%;
+    background-color: rgb(141, 26, 126);
+}
+
+#boite-3{
+    padding: 10%;
+    background-image: url("./img/box-bg.jpg"); /*para agregar la foto desde css*/
+    background: no-repeat / cover; /*para que no se repita la foto*/
+    background-position: center; /*para que la foto se centre*/
+}
+
+#boite-4{
+    padding: 10%;
+    background-image: url("./img/box-bg-lg.jpg"); /*para agregar la foto desde css*/
+    background: no-repeat / cover; /*para que no se repita la foto*/
+    background-position: center; /*para que la foto se centre*/
+}
+
+#boite-5{
+    padding: 10%;
+    background-color: rgb(49, 185, 133);
+}
+
+/*****************************SECTION 3*************************************************/
+.section_3{
+    padding: 20% 10%;
+}
+.section_3_text {
+    padding: 5% 10%;
+    color: grey;
+}
+/*****************************SECTION 4*************************************************/
+.section_4{
+    height: 100vh;
+    padding: 55% 20% 50% 10%;
+    color: white;
+    background-image: url("./img/full-image.jpg");
+    background-size: cover;   /***permite de cubrir toda la zona***/
+    background-position: 10%; /*** para centrar en el div***/
+    background-repeat: no-repeat; /* para que no se repita**/
+}
+
+/*****************************SECTION 5*************************************************/
+.section_5{
+    padding: 30% 10%;
+    background: rgb(49, 185, 133);
+    color:white;
+}
+
+/*****************************SECTION 6*************************************************/
+.section_6{
+    padding: 20% 10%;  
+}
+.secction_6_text {
+    padding: 10% 10%;  
+}
+
+.logos1{
+    width: 20%;
+}
+
+.bothon-1 {
+    background: rgb(2, 190, 175);
+    color: white;
+    font-size: 10px;
+    font-family: "Gill Sans", sans-serif;
+    width: 12vh;
+    height: 6vw;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#bc1{
+    background-color: rgb(190, 186, 186);
+}
+#bc2{
+    background-color: rgb(141, 60, 148);
+}
+#bc3{
+    background-color: rgb(49, 185, 133);
+}
+
+
+/*****************************FOOTER*************************************************/
+#footer{
+    padding: 10%;
+    background-color: rgb(15, 13, 15);
+    color:white;
+}
+#barre {
+    width: 70vw;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+#bothon{
+    position: relative;
+    background: rgb(2, 190, 175);
+    color: white;
+    width: 8vw;
+    height: 5.2vh;
+    left: -10px;
+    border: none;
+    outline: none;
+}
+#listes{
+        display: flex; /***para la flexibidad o flexbox*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;  /** espacio entre parrafos */
+        align-items: center; /***para alinear los parrrafos vertical*/
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<TABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media screen and (min-width:768px) and (max-width:1024px){
+    .section_1{
+        display: flex; /***para la flexibidad o flexbox*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;  /** espacio entre parrafos */
+        align-items: center; /***para alinear los parrrafos vertical*/
+
     }
 
-    #texte-dessus-1 {
-        position: absolute;
-        padding: 10%;
-        color: white;
-        text-align: justify;
-        top: 45%;
+    .section_1_text{
         width: 50%;
     }
-    /* PARTIE TITRES*/
-    h2{
-        font-size: 36px;
-        font-family: "Gill Sans", sans-serif;
-    }
-    h3{
-        font-size: 26px;
-        font-family: "Gill Sans", sans-serif;
-        color: rgb(44, 41, 41);
-    }
-    h4  {
-        font-size: 26px;
-        font-family: "Gill Sans", sans-serif;
-    }
-    h5 {
-        font-size: 14px;
-        font-family: "Gill Sans", sans-serif;
-    }
-    p{
-        font-size: 12px;
-        font-family: "Gill Sans", sans-serif;
-    }
-    /* PARTIE PREMIER SECTION*/
-    .section_1 {  
-        width: 100vw;
-        height: 70vh;
-        padding: 10%;
-        background:white
-    }
-    #text-1 {
-        font-family: "Gill Sans", sans-serif;
-        font-size: 14px;
-        text-align: justify;
-        color: gray;
-        }
-    #text-2 {
-        position: relative;
-        font-family: "Gill Sans", sans-serif;
-        font-size: 14px;
-        text-align: justify;
-        color: gray;
-        padding-top: 5%;  
-    }
-    /* PARTIE DEUXIEME SECTION*/
-    .section_2 {  
-        width: 100vw;
-        height: 160vh;
-        padding: 10%;
-        background:white;
-    }
-    #boite-a {
-        position: relative;
-        color: white;
-        font-size: 12px;
-    }
-    #boite-1 {
-        background: rgb(245, 143, 245);
-        padding: 5%;
-    }
-    #boite-2 {
-        background: rgb(73, 57, 102);
-        padding: 5%;
+
+    /*****************************SECTION 2*************************************************/
+    #section_2_grid {
+        display: grid; /****para hacer el grid****/
+        grid-template-rows: repeat(3, 1fr); /****para hacer grid de 3 lineas****/
+        grid-template-columns: repeat(2, 1fr);/****para hacer grid de 2 columnas****/
     }
 
-    #boite-3{
-        position: relative;
-        display: inline-block;
-        text-align: left;
+        #boite-1{
+          grid-row: 1; /** para posicionar en grid en linea 1**/
+          grid-column: 1/2; /****para posicionar en grid en columna borde 1 hasta borde2****/
+        }
         
-    }
-    #texte-dessus-2{
-        position: absolute;
-        top: 1%;
-        left: 5%;
-        padding: 5%;
-    }
-    #box-bg {
-        width: 80vw;
-        height: 30vh; 
-    }
-    #boite-b {
-        position: relative;
-        color: white;
-        font-size: 12px;
-    }
-    #boite-4{
-        position: relative;
-        display: inline-block;
-        text-align: left;
-    }
-    #texte-dessus-3{
-        padding: 5%;
-        position: absolute;
-        top: 0%;
-        left: 5%;
+        #boite-2{
+            grid-row: 1; /** para posicionar en grid en linea 1**/
+            grid-column: 2/3; /****para posicionar en grid en columna borde 2 hasta borde3****/
+        }
         
-    }
-    #box-bg-lg {
-        top: -50vh;
-        width: 80vw; 
-        height: 30vh; 
-    }
-    #boite-5 {
-        background: rgb(2, 190, 175);
-        padding: 5%;
-    }
-    /* PARTIE TROICIEME SECTION*/
-    .section_3 {  
-        width: 100%;
-        height: 100%;
-        padding: 10%;
-        background: white;
-            }
-    #menu1 li {
-        position: relative;
-        text-decoration: none;
-        padding-left: 2%;    
-    }
-    #menu1 li a {
-        font-size: 12px;
-        color:gray;
-        text-decoration: none;   
-    }
-    /* PARTIE QUATRIEME SECTION*/
-    .section_4 {  
-        width: 100vw;
-        height: 100vh;
-    }
-    #container4{
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-    #full-image {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-    }
-    #texte-dessus-4{
-        position: absolute;
-        top: 19%;
-        padding: 10%;
-        color: white;
-        text-align: left;
-        width: 90vw;
-    }
-    /* PARTIE CINQUIEME SECTION*/
-    .section_5 {  
-        width: 100vw;
-        height: 100vh;
-        padding: 10%;
-        background: rgb(2, 190, 175);
-    }
-    #Reasons {
-        color: white;
-    }
-    #menu2 li {
-        position: relative;
-        text-decoration: none;
-        padding-left: 2%; 
-        color:white;
-        margin-top: 30px;
-    }
-    #menu2 li a {
-        color:white;
-        text-decoration: none;   
-    }
-    /* PARTIE SIXIEME SECTION*/
-    .section_6 {  
-        position: relative;
-        display: inline-block;
-        text-decoration: none;
-        width: 100vw;
-        height: 100vh;
-        padding: 10%;
-        background: white 
-    }
-    #menu3 li {
-        position: relative;
-        display: inline-block;
-        text-decoration: none;
-        padding-left: 2%; 
-        color: grey;
-        margin-top: 65px;
+        #boite-3{
+            grid-row: 2; /** para posicionar en grid en linea 2**/
+            grid-column: 1/2; /****para posicionar en grid en columna borde 1 hasta borde2****/
+        }
         
-    }
-    #menu3 li a {
-        color: grey;
-        text-decoration: none;   
-    }
-    #bothon-1 {
-        position: absolute;
-        margin: -350px 0px 0px 8px;
-        background: rgb(179, 177, 177);
-        color: white;
-        font-size: 10px;
-        font-family: "Gill Sans", sans-serif;
-        width: 10vh;
-        height: 5vw;
-        border-radius: 5px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-    }
-    #bothon-2 {
-        position: absolute;
-        margin: -200px 0px 0px 8px;
-        background: rgb(2, 190, 175);
-        color: white;
-        font-size: 10px;
-        font-family: "Gill Sans", sans-serif;
-        width: 12vh;
-        height: 5vw;
-        border-radius: 5px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-    }
-    #bothon-3 {
-        position: absolute;
-        margin: -145px 0px 0px 6px;
-        background: rgb(73, 57, 102);
-        color: white;
-        font-size: 10px;
-        font-family: "Gill Sans", sans-serif;
-        width: 15vh;
-        height: 5vw;
-        border-radius: 5px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-    }
-    #bothon-0 {
-        position: absolute;
-        margin: -5px 0px 0px 6px;
-        background: rgb(2, 190, 175);
-        color: white;
-        font-size: 10px;
-        font-family: "Gill Sans", sans-serif;
-        width: 12vh;
-        height: 5vw;
-        border-radius: 5px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-    }
-    #logos1 {
-        position: absolute;
-        margin: 250px 0px 0px 5px;
-        top: 2vh;
-        width: 12%;
-        height: 4%;
-    }
-    #logos2 {
-        position: relative;
-        margin: 20px 0px 0px 5px;
-        top: 2vh;
-        width: 15%;
-        height: 15%;
-    }
-    /* PARTIE FOOTER*/
-    footer{
-        width: 100vw;
-        height: 70vh;
-        padding: 10%;
-        background: rgb(34, 34, 34);
-    }
-    #barre {
-        width: 65vw;
-    }
-    #bothon-4{
-        position: relative;
-        background: rgb(2, 190, 175);
-        color: white;
-        width: 8vw;
-        height: 4vh;
-        left: -10px;
-        border: none;
-        outline: none;
-    }
-    #text {
-        color: white;
-    }
-    .menufooter {
-        position: relative;
-        left: 17%;   
-        width: 66vw;
-        display: inline-block;
-        font-size: 12px;    
-        padding-top: 8%;
-    }
-    #menu4 li {
-        position: relative;
-        display: inline-block;
-        text-decoration: none;
-        width: 20vw;
-        padding-right: 5px;
+        #boite-4{
+            grid-row: 2; /** para posicionar en grid en linea 2**/
+            grid-column: 2/3; /****para posicionar en grid en columna borde 2 hasta borde3****/
+        }
         
+        #boite-5{
+            grid-row: 3; /** para posicionar en grid en linea 3**/
+            grid-column: 1/3; /****para posicionar en grid en columna borde 1 hasta borde3****/
+        }
+
+    /*****************************SECTION 3*************************************************/ 
+    #section_3_comp{
+        display: flex; /***para la flexibidad o flexbox*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;  /** espacio entre parrafos */
+        align-items: center; /***para alinear los parrrafos vertical*/
+
     }
-    #menu4 li a {
-        color:white;
-        text-decoration: none;   
+
+    .section_3_text{
+        width: 50%;
     }
+
+    /*****************************SECTION 4*************************************************/ 
+    .section_4{
+        padding: 25% 61% 50% 10%;
+    }
+
+
+    /*****************************SECTION 5*************************************************/ 
+    .section_5{
+       padding: 25% 10%;
+    }
+
+    #section_5_comp{
+        display: flex; /***para la flexibidad o flexbox*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;  /** espacio entre parrafos */
+        align-items: center; /***para alinear los parrrafos vertical*/
+
+    }
+
+    .section_5_text{
+        width: 30%;        
+    }
+
+  /*****************************SECTION 6*************************************************/ 
+    #section_6_comp{
+        display: flex; /***para la flexibidad o flexbox*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;  /** espacio entre parrafos */
+        align-items: center; /***para alinear los parrrafos vertical*/
+    }
+
+    .section_6_text{
+        width: 40%;        
+    }
+
+    .bothon-1 {
+        height: 4vw;
+    }
+    .logos1{
+        width: 30%;
+    }
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ORDI>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media screen and (min-width:1024px){
+    body{
+        background-color: gray;
+    }
+    /*****************************SECTION 2*************************************************/
+    #section_2_grid {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+        #boite-1{
+          grid-row: 1;
+          grid-column: 1/2;
+        }
+        
+        #boite-2{
+            grid-row: 1;
+            grid-column: 2/3;
+        }
+        
+        #boite-3{
+            grid-row: 1;
+            grid-column: 3/4;
+        }
+        
+        #boite-4{
+            grid-row: 2;
+            grid-column: 1/3;
+        }
+        
+        #boite-5{
+            grid-row: 2;
+            grid-column: 3/4;
+        }
 }
