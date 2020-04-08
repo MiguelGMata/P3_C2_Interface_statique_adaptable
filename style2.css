@@ -11,10 +11,8 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
 }
-
-/****************************** PARTIE MOBILE****************************************/
-@media (max-width: 480px) {
-     /* PARTIE HEADER*/
+/***************************************PARTIE TABLE*********************************************/
+@media (min-width: 481px) and  (max-width: 1023px) {
     .header {
         width: 100vw;
         height: 100vh;
@@ -30,7 +28,7 @@ body {
     }
     #logo {
         position: absolute;
-        top: 4%;
+        top: 8%;
         left: 5%;
         width: 5%;
     }
@@ -38,7 +36,7 @@ body {
         position: absolute;
         padding: 10%;
         color: white;
-        top: -3%;
+        top: -2%;
         font-size: 18px;
     }
 
@@ -75,7 +73,7 @@ body {
     /* PARTIE PREMIER SECTION*/
     .section_1 {  
         width: 100vw;
-        height: 70vh;
+        height: 90vh;
         padding: 10%;
         background:white
     }
@@ -84,6 +82,9 @@ body {
         font-size: 14px;
         text-align: justify;
         color: gray;
+        width: 30vw;
+        margin-left: 50px;
+        padding-top: 30px;
         }
     #text-2 {
         position: relative;
@@ -92,11 +93,16 @@ body {
         text-align: justify;
         color: gray;
         padding-top: 5%;  
+        width: 30vw;
+        left: 110%;
+        margin-top: -250px;
+
+        
     }
     /* PARTIE DEUXIEME SECTION*/
     .section_2 {  
         width: 100vw;
-        height: 160vh;
+        height: 100vh;
         padding: 10%;
         background:white;
     }
@@ -108,16 +114,21 @@ body {
     #boite-1 {
         background: rgb(245, 143, 245);
         padding: 5%;
+        width: 40vw;
     }
     #boite-2 {
         background: rgb(73, 57, 102);
         padding: 5%;
+        width: 40vw;
+        margin: -195px 20px 30px 307px;
     }
 
     #boite-3{
         position: relative;
         display: inline-block;
         text-align: left;
+        width: 40vw;
+        margin-top: -30px;
         
     }
     #texte-dessus-2{
@@ -127,51 +138,63 @@ body {
         padding: 5%;
     }
     #box-bg {
-        width: 80vw;
+        width: 40vw;
         height: 30vh; 
     }
     #boite-b {
         position: relative;
         color: white;
         font-size: 12px;
+        width: 80vw; 
     }
     #boite-4{
         position: relative;
         display: inline-block;
         text-align: left;
+        width: 40vw;
+        height: 40vh;
+        margin: -213px 20px 30px 307px;
     }
     #texte-dessus-3{
         padding: 5%;
         position: absolute;
         top: 0%;
-        left: 5%;
-        
+        left: 5%;   
     }
     #box-bg-lg {
         top: -50vh;
-        width: 80vw; 
+        width: 40vw; 
         height: 30vh; 
     }
     #boite-5 {
         background: rgb(2, 190, 175);
         padding: 5%;
+        width: 80vw; 
+        margin: -6px 20px 30px -308px;
     }
+
     /* PARTIE TROICIEME SECTION*/
     .section_3 {  
+        position: relative;
+        display: inline-block;
         width: 100%;
-        height: 100%;
-        padding: 10%;
+        height: 70%;
+        padding: 15%;
         background: white;
-            }
+        
+        
+    }
     #menu1 li {
         position: relative;
+        display: inline-block;
         text-decoration: none;
-        padding-left: 2%;    
+        padding-left: 2%; 
+        width: 32vw; 
     }
     #menu1 li a {
         font-size: 12px;
         color:gray;
-        text-decoration: none;   
+        text-decoration: none;  
     }
     /* PARTIE QUATRIEME SECTION*/
     .section_4 {  
@@ -190,31 +213,39 @@ body {
     }
     #texte-dessus-4{
         position: absolute;
-        top: 19%;
+        top: 10%;
         padding: 10%;
         color: white;
         text-align: left;
-        width: 90vw;
+        width: 46vw;
     }
     /* PARTIE CINQUIEME SECTION*/
-    .section_5 {  
+    .section_5 {
+        position: relative;
+        display: inline-block;   
         width: 100vw;
-        height: 100vh;
-        padding: 10%;
-        background: rgb(2, 190, 175);
+        height: 70vh;
+        font-size: 12px;    
+        padding-top: 12%;
+        background-color: rgb(2, 190, 175);
     }
     #Reasons {
-        color: white;
+       color: white;
+       padding-left: 10%;
+       position: relative;
     }
+    
     #menu2 li {
         position: relative;
+        display: inline-block;
         text-decoration: none;
-        padding-left: 2%; 
-        color:white;
-        margin-top: 30px;
+        padding-left: 2%;
+        width:30vw;
+        padding-left: 10vw;
+        
     }
     #menu2 li a {
-        color:white;
+        color: white;
         text-decoration: none;   
     }
     /* PARTIE SIXIEME SECTION*/
@@ -223,26 +254,29 @@ body {
         display: inline-block;
         text-decoration: none;
         width: 100vw;
-        height: 100vh;
+        height: 70vh;
         padding: 10%;
-        background: white 
+        background: white;
     }
     #menu3 li {
         position: relative;
         display: inline-block;
         text-decoration: none;
         padding-left: 2%; 
-        color: grey;
-        margin-top: 65px;
+        width: 30vw;
+        margin: 30px 20px 10px 45px;
         
     }
     #menu3 li a {
         color: grey;
         text-decoration: none;   
     }
+    #h4c{
+        color: black;
+    }
     #bothon-1 {
         position: absolute;
-        margin: -350px 0px 0px 8px;
+        margin: -10px 0px 10px -540px;
         background: rgb(179, 177, 177);
         color: white;
         font-size: 10px;
@@ -256,7 +290,7 @@ body {
     }
     #bothon-2 {
         position: absolute;
-        margin: -200px 0px 0px 8px;
+        margin: 220px 120px 10px -540px;
         background: rgb(2, 190, 175);
         color: white;
         font-size: 10px;
@@ -270,7 +304,7 @@ body {
     }
     #bothon-3 {
         position: absolute;
-        margin: -145px 0px 0px 6px;
+        margin: -235px 0px 10px 220px;
         background: rgb(73, 57, 102);
         color: white;
         font-size: 10px;
@@ -284,12 +318,12 @@ body {
     }
     #bothon-0 {
         position: absolute;
-        margin: -5px 0px 0px 6px;
+        margin: -5px 10px -5px 220px;
         background: rgb(2, 190, 175);
         color: white;
         font-size: 10px;
         font-family: "Gill Sans", sans-serif;
-        width: 12vh;
+        width: 15vh;
         height: 5vw;
         border-radius: 5px;
         border: none;
@@ -297,35 +331,36 @@ body {
         cursor: pointer;
     }
     #logos1 {
-        position: absolute;
-        margin: 250px 0px 0px 5px;
-        top: 2vh;
-        width: 12%;
-        height: 4%;
+        position: relative;
+        top: 12vh;
+        width: 15%;
+        height: 15%;
+        margin-left: 40px;
     }
     #logos2 {
         position: relative;
-        margin: 20px 0px 0px 5px;
-        top: 2vh;
+        top: 12vh;
         width: 15%;
         height: 15%;
+        margin-left: 230px;
     }
     /* PARTIE FOOTER*/
     footer{
         width: 100vw;
-        height: 70vh;
+        height: 90vh;
         padding: 10%;
         background: rgb(34, 34, 34);
     }
     #barre {
         width: 65vw;
+        height: 5vh;
     }
     #bothon-4{
         position: relative;
         background: rgb(2, 190, 175);
         color: white;
         width: 8vw;
-        height: 4vh;
+        height: 5vh;
         left: -10px;
         border: none;
         outline: none;
@@ -335,22 +370,32 @@ body {
     }
     .menufooter {
         position: relative;
-        left: 17%;   
-        width: 66vw;
         display: inline-block;
+        left: 5%;   
+        width: 66vw;
         font-size: 12px;    
-        padding-top: 8%;
+        padding-top: 5%;
     }
+
     #menu4 li {
         position: relative;
         display: inline-block;
         text-decoration: none;
-        width: 20vw;
+        width: 10vw;
         padding-right: 5px;
         
     }
     #menu4 li a {
         color:white;
         text-decoration: none;   
+    }
+    #li1 {
+        margin: 0px 50px 0px 10px;
+    }
+    #li2 {
+        margin: 0px 50px 0px 50px;
+    }
+    #li3 {
+        margin: 0px 10px 0px 50px;
     }
 }
