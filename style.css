@@ -186,7 +186,9 @@ p{
     position: relative;
     margin: 40px 40px -55px -85px;
 }
-
+h3 {
+    padding-left: 10%;
+}  
 /*----------------------------------------------------FOOTER PORTABLE-----------------------------------------------------*/ 
 #footer{
     padding: 10%;
@@ -393,12 +395,12 @@ p{
     }
     #iphone {
         position: absolute;
-        background-image: url("img/iphone.png") ;
-        background-size: cover;   
+        background-image: url("img/iphone.png");
+        background-size: 70%;
         background-repeat: no-repeat;
         width: 55vw;
         height: 125vh; 
-        margin: -50px 0px -50px 450px;
+        margin:100px 0px -50px 750px;
     }
  /*------------------------------------------------SECTION 1 ORDI-------------------------------------------------------*/ 
  .section_1{
@@ -532,13 +534,14 @@ p{
     border-width: 5px 5px; 
     border-radius: 20px; 
     margin: -30% 0% 20% 68%;
+  
   }
   @keyframes borde-ani-imag-row-1{
     0% {
       border-color: rgba(0, 0, 0, 0.25);
       border-top-color: black;
     }
-  25% {
+    25% {
       border-color: rgba(0, 0, 0, 0.25);
       border-right-color: black;
     }
@@ -560,11 +563,17 @@ p{
   }
   
   .borde-ani-imag {
-    border: 15px solid black;
+    border: 15px solid black;  
    }
+
+   .borde-ani-imag:hover {
+    transform: scale(1.1);
+   }
+
   .borde-ani-imag.row-1 {
-  animation: borde-ani-imag-row-1 750ms linear infinite;
-  }
+  animation: borde-ani-imag-row-1 500ms linear infinite;
+  
+}
  /*--------------------------------------------------FOOTER ORDI-----------------------------------------------------*/
  #listes{
      padding: 10% 10%;
